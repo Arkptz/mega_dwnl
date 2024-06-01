@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "mega-dwnl"
+version = "0.1.0"
+description = ""
+authors = ["arkptz <arkptz@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ez-pyload = "^1.0.4"
+rarfile = "^4.2"
+[tool.poetry.scripts]
+start = 'mega_dwnl.main:main'
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
